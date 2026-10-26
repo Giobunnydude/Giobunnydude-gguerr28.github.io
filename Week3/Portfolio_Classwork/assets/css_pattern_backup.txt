@@ -1,0 +1,19 @@
+.pattern-background {
+position: relative;
+overflow: hidden;
+background-color: #86cc40;
+
+}
+
+.pattern-background::before {
+content: "";
+position: absolute;
+inset: -100%;
+transform: rotate(30deg);
+transform-origin: center;
+background-color: #86cc40;
+opacity: 1;
+background-image: conic-gradient(from 60deg at 56.25% calc(425% / 6), transparent 0deg, transparent 0.5deg, #75a893 0.5deg, #75a893 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 60deg at 56.25% calc(425% / 6), transparent 0deg, transparent 0.5deg, #75a893 0.5deg, #75a893 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 180deg at 43.75% calc(425% / 6), transparent 0deg, transparent 0.5deg, #75a893 0.5deg, #75a893 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 180deg at 43.75% calc(425% / 6), transparent 0deg, transparent 0.5deg, #75a893 0.5deg, #75a893 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from -60deg at 50% calc(175% / 12), transparent 0deg, transparent 0.5deg, #75a893 0.5deg, #75a893 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from -60deg at 50% calc(175% / 12), transparent 0deg, transparent 0.5deg, #75a893 0.5deg, #75a893 119.5deg, transparent 119.5deg, transparent 120deg);
+background-position: 0 0, 14px 24px, 0 0, 14px 24px, 14px 0, 0 24px;
+background-size: 28px 48px;
+}
