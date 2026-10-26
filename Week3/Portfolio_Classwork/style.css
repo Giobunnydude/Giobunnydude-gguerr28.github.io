@@ -1,0 +1,97 @@
+.libertinus-mono-regular
+{
+  font-family: "Libertinus Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.caprasimo-regular
+{
+  font-family: "Caprasimo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root
+{
+    --accentColor: #0b3b04;
+    --cardColors: rgba(25, 25, 25, 0.82);
+    --borderColor: #454545;
+}
+
+* {
+    color: white;
+    font-family: "Libertinus Mono", monospace;
+}
+
+body {
+    background-color: #454545;
+    background-image: url("./assets/css-pattern-by-magicpattern.png");
+    background-repeat: repeat;
+    padding: 0 60px;
+}
+
+header,
+h2 { font-family: "Caprasimo", serif; }
+
+header
+{
+    color: var(--accentColor);
+    font-size: 32px;
+    padding: 16px 0;
+}
+
+.Quote
+{
+    font-size: 36px;
+    margin-bottom: 32px;
+}
+
+h2
+{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 3px 2px 0 var(--accentColor);
+}
+
+.Glances .Buttons,
+.favoriteGames .Buttons
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.Glances .Buttons button,
+.favoriteGames .Buttons button
+{
+    background-color: var(--cardColors);
+    border: 1px solid var(--borderColor);
+    border-radius: 4px;
+    padding: 16px;
+    transition: box-shadow 500ms;
+}
+
+.Glances .Buttons button:hover,
+.favoriteGames .Buttons button:hover { box-shadow: 8px 8px var(--accentColor); }
+
+.EDU > ul
+{
+    background-color: var(--cardColors);
+    font-size: 18px;
+    padding: 16px 40px;
+}
+
+.EDU li { padding: 12px; }
+
+.favoriteGames .Buttons img
+{
+    display: block;
+    max-width: 180px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+}
