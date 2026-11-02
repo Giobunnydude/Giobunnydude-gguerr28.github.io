@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick Your Starter Pokemon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="top-bar">
+        <h1>Pick Your Starter Pokemon</h1>
+    </header>
+
+    <main class="starter-grid">
+        <article class="starter-card" id="bulbasaur">
+            <img src="assets/bulbasaur.png" alt="Bulbasaur">
+            <div class="card-info">
+                <h2>Bulbasaur</h2>
+                <p>Type: Grass / Poison</p>
+                <div class="card-actions">
+                    <button type="button" onclick="document.getElementById('bulbasaur-audio').play()">Play sound</button>
+                    <button type="button">Select starter</button>
+                </div>
+                <audio id="bulbasaur-audio" src="assets/001.wav" preload="none"></audio>
+            </div>
+        </article>
+
+        <article class="starter-card" id="charmander">
+            <img src="assets/Charmander.png" alt="Charmander">
+            <div class="card-info">
+                <h2>Charmander</h2>
+                <p>Type: Fire</p>
+                <div class="card-actions">
+                    <button type="button" onclick="document.getElementById('charmander-audio').play()">Play sound</button>
+                    <button type="button">Select starter</button>
+                </div>
+                <audio id="charmander-audio" src="assets/004.wav" preload="none"></audio>
+            </div>
+        </article>
+
+        <article class="starter-card" id="squirtle">
+            <img src="assets/squirtle.png" alt="Squirtle">
+            <div class="card-info">
+                <h2>Squirtle</h2>
+                <p>Type: Water</p>
+                <div class="card-actions">
+                    <button type="button" onclick="document.getElementById('squirtle-audio').play()">Play sound</button>
+                    <button type="button">Select starter</button>
+                </div>
+                <audio id="squirtle-audio" src="assets/007.wav" preload="none"></audio>
+            </div>
+        </article>
+
+        <article class="starter-card" id="pikachu">
+            <img src="assets/pika.png" alt="Pikachu">
+            <div class="card-info">
+                <h2>Pikachu</h2>
+                <p>Type: Electric</p>
+                <div class="card-actions">
+                    <button type="button" onclick="document.getElementById('pikachu-audio').play()">Play sound</button>
+                    <button type="button">Select starter</button>
+                </div>
+                <audio id="pikachu-audio" src="assets/025.wav" preload="none"></audio>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
