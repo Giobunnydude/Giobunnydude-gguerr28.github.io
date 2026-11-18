@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#14211d">
+    <title>Meanwhile in Florida</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="home-page">
+    <main class="home-shell">
+        <header class="site-header">
+            <a class="wordmark" href="./index.html" aria-label="Florida Battle home">
+                <span class="wordmark-icon" aria-hidden="true">✦</span>
+                <span>FLORIDA<span class="wordmark-accent"> RPG Battle</span></span>
+            </a>
+            <div class="music-control">
+                <audio id="background-music" src="./assets/Last%20Friday%20Night%20but%20its%20extremely%20low%20quality.mp3" loop preload="none" data-track-name="Last Friday Night"></audio>
+                <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false" aria-label="Play Last Friday Night">
+                    <span class="music-icon" aria-hidden="true">♫</span>
+                    <span id="music-label">Play Epic Florida tune</span>
+                </button>
+            </div>
+        </header>
+
+        <section class="hero" aria-labelledby="page-title">
+            <img class="hero-image" src="./assets/Florida.png" alt="Another Alligator. Another day in Florida.">
+            <div class="hero-shade"></div>
+            <div class="hero-copy">
+                <h1 id="page-title"><span>In Florida: </span></h1>
+                <p class="hero-description">There’s an alligator in your neighborhood, and it wants to eat your turtle! But with the power of Florida and Florida man spirits, squirts can fight back!</p>
+                <a class="button button-primary start-button" href="./game.html">
+                    SAVE YOUR TURTLE <span aria-hidden="true">→</span>
+                </a>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <span>A FLORIDA-SIZED JOKE BY GIO GUERRERO</span>
+            <span>Sprites: <a href="https://www.dragonflycave.com/resources/sprite-generator/">Dragonfly Cave</a></span>
+        </footer>
+    </main>
+    <script src="./music.js" defer></script>
+</body>
+</html>
